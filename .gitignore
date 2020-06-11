@@ -1,4 +1,9 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+base/
+abstract/
+components/
+layout/
+node_modules/
+package-lock.json
+package.json
+pages/
+sass/
