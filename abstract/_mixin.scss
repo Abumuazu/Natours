@@ -1,0 +1,40 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//MEDIA QUERY MANAGER
+/*
+0 - 600PX ==== PHONE
+600 - 900PX ==== TABLET PORTRAIT
+900 - 1200PX ==== TABLET LANDSCAPE
+1200 - 1800PX ==== NORMAL STYLES APPLY
+1800PX+ ==== BIG DESKTOP 
+*/
+// esay way of writing Media Q:: start from the base, then the typography,den the feneral layout(header,footer, navigation), den the Grid, den the most specific layout and den the
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == big-desktop {
+    @media (max-width: 112.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+}
