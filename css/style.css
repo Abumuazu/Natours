@@ -747,6 +747,7 @@ body {
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../images/hero-small.jpg");
   background-size: cover;
   background-position: top;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../images/hero.jpg");
   position: relative; }
   @supports (-webkit-clip-path: polygon(0 0)) and (clip-path: polygon(0 0)) {
     .header {
