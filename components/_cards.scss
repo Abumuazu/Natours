@@ -166,23 +166,22 @@
     font-weight: 50;
   }
   @include respond(tab-port) {
-    height: 83rem;
+    height: auto;
     border-radius: 3px;
-    //  background: $color-white;
+    background: $color-white;
     box-shadow: $box-shadow2;
 
     // for card functionality
     &_side {
       height: auto;
-      transition: all 0.8s ease;
+      // transition: all 0.8s ease;
       position: relative;
-      border-radius: none;
 
       //back styling 1
       &--back {
         transform: rotateY(0deg);
-        clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
-        top: -6rem;
+        // clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+        // top: -5rem;
       }
     }
     // Hover effect
@@ -193,9 +192,9 @@
     //Back styling
     &_cta {
       position: relative;
-      top: 2rem;
-      left: 0;
-      transition: translate(0);
+      top: 0%;
+      left: 0%;
+      transform: translate(0);
       width: 100%;
       padding: 7rem 4rem 4rem 4rem;
     }
@@ -203,15 +202,15 @@
       margin-bottom: 3rem;
     }
     &_details {
-      padding: 2rem 2rem 6rem 2rem;
+      padding: 1rem 3rem;
     }
     &_price-only {
       margin-top: 20rem;
     }
     &_price-value {
       font-size: 6rem;
-      margin-bottom: 10%;
-      font-weight: 50;
+      margin-bottom: auto;
+      // font-weight: 50;
     }
   }
 }
