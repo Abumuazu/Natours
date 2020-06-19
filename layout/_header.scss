@@ -2,10 +2,10 @@
   height: 85vh;
   background-image: linear-gradient(
       to right bottom,
-      $color-primary-light,
-      $color-primary-dark
+      rgba($color-primary-light, 0.7),
+      rgba($color-primary-dark, 0.7)
     ),
-    url("../images/hero-small.jpg");
+    url("../images/hero.jpg");
 
   background-size: cover;
   background-position: top;
@@ -20,8 +20,8 @@
     (min-width: 125em) {
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)
+        rgba($color-primary-light, 0.7),
+        rgba($color-primary-dark, 0.7)
       ),
       url("../images/hero.jpg");
   }
@@ -29,13 +29,6 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   }
-
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
-    ),
-    url("../images/hero.jpg");
   position: relative;
   &__logobox {
     position: absolute;
